@@ -1,0 +1,41 @@
+<svg width="1800" height="640" viewBox="0 0 1800 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="70" x2="1720" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1522"/>
+      <stop offset="1" stop-color="#060A11"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="170" y1="140" x2="510" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132238"/>
+      <stop offset="1" stop-color="#0B131F"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="60" y="60" width="1680" height="520" rx="72" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1680" height="520" rx="72" stroke="#15263D" stroke-width="3"/>
+
+  <!-- Abstract growth/signal symbol -->
+  <g transform="translate(140 120)">
+    <rect x="0" y="0" width="380" height="400" rx="52" fill="url(#chip)" stroke="#1A2F49" stroke-width="2"/>
+
+    <rect x="74" y="232" width="56" height="100" rx="18" fill="#F8FAFC"/>
+    <rect x="160" y="182" width="56" height="150" rx="18" fill="#F8FAFC"/>
+    <rect x="246" y="120" width="56" height="212" rx="18" fill="#2FB6FF"/>
+
+    <path d="M74 286L188 206L274 136" stroke="#F8FAFC" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M274 136L258 136M274 136L274 152" stroke="#F8FAFC" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M290 94C318 102 342 124 350 152" stroke="#2FB6FF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M304 70C341 82 371 111 384 148" stroke="#2FB6FF" stroke-opacity="0.78" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(600 190)">
+    <text x="0" y="148" fill="#FFFFFF" font-family="Inter, Avenir Next, Helvetica, Arial, sans-serif" font-size="148" font-weight="700" letter-spacing="4">
+      ELEVATE
+    </text>
+    <text x="6" y="224" fill="#AFC2D8" font-family="Inter, Avenir Next, Helvetica, Arial, sans-serif" font-size="52" font-weight="500" letter-spacing="12">
+      DIGITAL CO.
+    </text>
+    <rect x="8" y="248" width="250" height="10" rx="5" fill="#2FB6FF"/>
+  </g>
+</svg>

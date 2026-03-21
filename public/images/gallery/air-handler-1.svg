@@ -1,0 +1,10 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="700" fill="#0A2E45"/>
+  <rect x="130" y="120" width="640" height="460" rx="24" fill="#FFFFFF"/>
+  <rect x="200" y="200" width="500" height="120" rx="16" fill="#0E5A8A"/>
+  <rect x="200" y="350" width="500" height="160" rx="16" fill="#F4F7FA"/>
+  <circle cx="300" cy="430" r="36" fill="#3C92C9"/>
+  <circle cx="410" cy="430" r="36" fill="#3C92C9"/>
+  <circle cx="520" cy="430" r="36" fill="#3C92C9"/>
+  <text x="135" y="86" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">Air Handler Upgrade</text>
+</svg>

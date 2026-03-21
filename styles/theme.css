@@ -1,0 +1,30 @@
+@theme inline {
+  --color-primaryBlue: #0e5a8a;
+  --color-deepNavy: #0a2e45;
+  --color-skyBlue: #3c92c9;
+  --color-lightGray: #f4f7fa;
+  --color-charcoal: #1f2937;
+  --color-ctaAccent: #c0392b;
+  --font-heading: var(--font-oswald);
+  --font-sans: var(--font-inter);
+}
+
+@utility container-base {
+  margin-inline: auto;
+  width: min(100% - 2rem, 76rem);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-charcoal antialiased;
+  }
+
+  ::selection {
+    background: #0e5a8a;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,8 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="700" fill="#F4F7FA"/>
+  <rect x="100" y="100" width="700" height="500" rx="24" fill="#FFFFFF" stroke="#D4DFEA" stroke-width="2"/>
+  <path d="M190 250H710V320H470V420H370V320H190V250Z" fill="#0E5A8A"/>
+  <rect x="250" y="450" width="140" height="70" rx="12" fill="#3C92C9"/>
+  <rect x="510" y="450" width="140" height="70" rx="12" fill="#3C92C9"/>
+  <text x="110" y="70" fill="#0A2E45" font-family="Arial, sans-serif" font-size="30" font-weight="700">Ductwork Optimization</text>
+</svg>

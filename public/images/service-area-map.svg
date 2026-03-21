@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F4F7FA"/>
+  <rect x="80" y="80" width="1040" height="740" rx="24" fill="#FFFFFF" stroke="#D4DFEA" stroke-width="2"/>
+  <path d="M200 260C300 200 470 220 560 280C660 350 760 340 860 300C930 270 980 280 1020 320V700H180V320C190 290 190 275 200 260Z" fill="#DCEAF6"/>
+  <path d="M220 540C360 520 520 560 650 610C790 665 900 665 1000 640" stroke="#3C92C9" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="520" cy="560" r="18" fill="#C0392B"/>
+  <circle cx="680" cy="600" r="14" fill="#0E5A8A"/>
+  <circle cx="810" cy="610" r="12" fill="#0E5A8A"/>
+  <text x="500" y="530" fill="#0A2E45" font-family="Arial, sans-serif" font-size="28" font-weight="700">St. Cloud</text>
+  <text x="660" y="575" fill="#0A2E45" font-family="Arial, sans-serif" font-size="24" font-weight="700">Orlando</text>
+  <text x="200" y="160" fill="#0A2E45" font-family="Arial, sans-serif" font-size="34" font-weight="700">Service Area Map Placeholder</text>
+  <text x="200" y="205" fill="#3C92C9" font-family="Arial, sans-serif" font-size="24">Central Florida / Greater Orlando Coverage</text>
+</svg>

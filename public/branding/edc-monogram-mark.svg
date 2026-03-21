@@ -1,0 +1,14 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- E -->
+  <path d="M182 300V724" stroke="#FFFFFF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M182 300H344" stroke="#FFFFFF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M182 512H316" stroke="#FFFFFF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M182 724H344" stroke="#FFFFFF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- D -->
+  <path d="M428 300V724" stroke="#FFFFFF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M428 300H524C618 300 694 396 694 512C694 628 618 724 524 724H428" stroke="#FFFFFF" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- C (accent) -->
+  <path d="M814 368C782 326 735 300 682 300C574 300 486 396 486 512C486 628 574 724 682 724C735 724 782 698 814 656" stroke="#33C5F3" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

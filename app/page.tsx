@@ -1,65 +1,142 @@
 import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
 
-export default function Home() {
+import { ContactForm } from "@/components/ContactForm";
+import { CtaBanner } from "@/components/CtaBanner";
+import { Hero } from "@/components/Hero";
+import { SectionHeading } from "@/components/SectionHeading";
+import { ServiceAreaSection } from "@/components/ServiceAreaSection";
+import { ServicesGrid } from "@/components/ServicesGrid";
+import { TestimonialCards } from "@/components/TestimonialCards";
+import { TrustBar } from "@/components/TrustBar";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
+import { businessInfo, createMetadata } from "@/data/siteContent";
+
+export const metadata: Metadata = createMetadata({
+  title: "Central Florida HVAC Repair, Installation & Maintenance",
+  description:
+    "Right Coast Air & Mechanical provides trusted residential and commercial HVAC repair, installation, and maintenance in St. Cloud and Greater Orlando.",
+  path: "/",
+});
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  name: businessInfo.name,
+  areaServed: businessInfo.serviceAreaSummary,
+  telephone: businessInfo.phoneDisplay,
+  url: "https://rightcoastairmechanical.com",
+  openingHours: ["Mo-Fr 07:00-19:00", "Sa 08:00-16:00"],
+  serviceType: [
+    "AC Repair",
+    "AC Installation",
+    "HVAC Maintenance",
+    "Heating Services",
+    "Commercial HVAC",
+    "Emergency Service",
+  ],
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Hero />
+      <TrustBar />
+
+      <section className="container-base py-16 sm:py-20">
+        <SectionHeading
+          eyebrow="Our Services"
+          title="Our HVAC Services"
+          description="From fast repairs to complete system replacements, our team delivers efficient, high-quality HVAC solutions across Central Florida."
+          center
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="mt-10">
+          <ServicesGrid compact />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </section>
+
+      <section className="bg-lightGray py-16 sm:py-20">
+        <div className="container-base">
+          <SectionHeading
+            eyebrow="Why Choose Us"
+            title="Why Choose Right Coast Air & Mechanical"
+            description="We focus on clear communication, long-term solutions, and customer-first service for every home and business we serve."
+          />
+          <div className="mt-8">
+            <WhyChooseUs />
+          </div>
+        </div>
+      </section>
+
+      <section className="container-base py-16 sm:py-20">
+        <div className="grid gap-10 rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_14px_28px_rgba(15,23,42,0.08)] lg:grid-cols-[1fr_1.1fr] lg:p-10">
+          <div className="relative h-72 overflow-hidden rounded-2xl bg-lightGray">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/about-team.svg"
+              alt="Right Coast Air HVAC team"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 44vw"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+          <div>
+            <SectionHeading
+              eyebrow="About Right Coast Air"
+              title="Over 10 Years of HVAC Experience in Central Florida"
+              description="Our mission is simple: deliver reliable comfort through honest recommendations, high standards, and responsive service."
+            />
+            <ul className="mt-5 space-y-2 text-sm text-charcoal/85">
+              <li>- Customer-first service from first call to final walkthrough</li>
+              <li>- Honest communication with practical options and clear pricing</li>
+              <li>- Skilled workmanship for long-lasting system performance</li>
+            </ul>
+            <Link
+              href="/about"
+              className="mt-6 inline-flex items-center font-semibold uppercase tracking-wide text-primaryBlue hover:text-deepNavy"
+            >
+              Learn More About Us
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="bg-lightGray py-16 sm:py-20">
+        <div className="container-base">
+          <SectionHeading
+            eyebrow="Testimonials"
+            title="What Central Florida Customers Say"
+            description="Our reputation is built one project at a time, with dependable service and quality results."
+            center
+          />
+          <div className="mt-10">
+            <TestimonialCards limit={3} />
+          </div>
+        </div>
+      </section>
+
+      <section className="container-base py-16 sm:py-20">
+        <ServiceAreaSection />
+      </section>
+
+      <section id="quote" className="bg-lightGray py-16 sm:py-20">
+        <div className="container-base grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+          <SectionHeading
+            eyebrow="Get a Free Quote"
+            title="Need HVAC Service in St. Cloud or Orlando?"
+            description={`Call ${businessInfo.phoneDisplay} or send your service request online. We handle repairs, maintenance, and installations for homes and businesses.`}
+          />
+          <ContactForm compact />
+        </div>
+      </section>
+
+      <section className="container-base py-16">
+        <CtaBanner
+          title="Need HVAC Service Fast?"
+          description="Call Right Coast Air & Mechanical now for quick scheduling, trusted recommendations, and professional service in Central Florida."
+        />
+      </section>
+    </>
   );
 }
