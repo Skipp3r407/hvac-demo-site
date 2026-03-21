@@ -58,8 +58,8 @@ export function ContactForm({ compact = false }: ContactFormProps) {
               Select a service
             </option>
             <option>AC Repair</option>
-            <option>AC Installation</option>
-            <option>HVAC Maintenance</option>
+            <option>AC Installation & Replacement</option>
+            <option>Preventive Maintenance</option>
             <option>Heating Services</option>
             <option>Commercial HVAC</option>
             <option>Emergency Service</option>

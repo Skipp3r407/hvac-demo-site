@@ -28,8 +28,8 @@ export function Hero() {
               Stay Cool with Trusted HVAC Experts in Central Florida
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-100">
-              Reliable AC repair, installation, and maintenance for homes and businesses across
-              Central Florida.
+              Reliable residential and commercial HVAC repair, installation, and maintenance for
+              homes and businesses.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CTAButton href="/contact">{businessInfo.ctaLabel}</CTAButton>

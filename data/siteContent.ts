@@ -79,10 +79,9 @@ export const navItems: NavItem[] = [
 
 export const trustBarItems = [
   "Residential & Commercial",
-  "Repair",
-  "Maintenance",
-  "Installation",
-  "Emergency Service",
+  "10+ Years Experience",
+  "All Major Brands",
+  "Fast, Reliable Service",
 ];
 
 export const services: Service[] = [
@@ -99,7 +98,7 @@ export const services: Service[] = [
     highlights: ["System sizing", "High-efficiency options", "Clean install process"],
   },
   {
-    title: "HVAC Maintenance",
+    title: "Maintenance",
     description:
       "Seasonal tune-ups that improve performance, lower energy use, and reduce surprise breakdowns.",
     highlights: ["Filter checks", "Coil cleaning", "Performance testing"],
@@ -137,7 +136,7 @@ export const serviceDetails: ServiceDetail[] = [
     ctaCopy: "Book AC Repair",
   },
   {
-    title: "AC Installation",
+    title: "AC Installation & Replacement",
     description:
       "Upgrade to an efficient, properly sized comfort system with professional installation and clean project execution.",
     benefits: [
@@ -148,7 +147,7 @@ export const serviceDetails: ServiceDetail[] = [
     ctaCopy: "Get an Installation Quote",
   },
   {
-    title: "HVAC Maintenance",
+    title: "Preventive Maintenance",
     description:
       "Routine tune-ups help prevent breakdowns, protect efficiency, and extend equipment lifespan in Florida heat.",
     benefits: [
@@ -179,6 +178,17 @@ export const serviceDetails: ServiceDetail[] = [
       "Service built around operational schedules",
     ],
     ctaCopy: "Request Commercial Support",
+  },
+  {
+    title: "Emergency Service",
+    description:
+      "When comfort fails unexpectedly, our team delivers rapid HVAC response to restore cooling or heating as quickly as possible.",
+    benefits: [
+      "Priority scheduling for urgent service calls",
+      "Fast diagnostics for critical system failures",
+      "Clear repair options to get you back online quickly",
+    ],
+    ctaCopy: "Request Emergency Service",
   },
 ];
 
@@ -263,27 +273,27 @@ export const testimonials: Testimonial[] = [
 
 export const faqs: FaqItem[] = [
   {
-    question: "How often should I schedule HVAC maintenance in Central Florida?",
+    question: "Do you service residential and commercial properties?",
+    answer:
+      "Yes. Right Coast Air & Mechanical supports both residential and commercial HVAC projects throughout Central Florida and the Greater Orlando area.",
+  },
+  {
+    question: "What HVAC services do you provide?",
+    answer:
+      "We provide AC repair, AC installation and replacement, preventive maintenance, heating services, commercial HVAC support, and emergency service.",
+  },
+  {
+    question: "Do you offer maintenance?",
     answer:
       "For most homes and small businesses, twice per year is ideal: once before cooling season and once before heating season. Regular maintenance helps extend system life and improve efficiency in Florida's high-heat climate.",
   },
   {
-    question: "Do you service both residential and commercial HVAC systems?",
-    answer:
-      "Yes. Right Coast Air & Mechanical provides HVAC service, repair, maintenance, and installation for both residential and commercial properties throughout Greater Orlando.",
-  },
-  {
-    question: "What brands do you work on?",
+    question: "Do you work on all major brands?",
     answer:
       "We service all major HVAC brands and system types. If you have questions about your equipment, call us and we can confirm support before your appointment.",
   },
   {
-    question: "How do I know if I should repair or replace my AC system?",
-    answer:
-      "We look at system age, repair frequency, efficiency, and cost-to-value. If replacement is the better long-term move, we explain your options with clear, no-pressure recommendations.",
-  },
-  {
-    question: "Do you offer free quotes?",
+    question: "How do I request a quote?",
     answer:
       "Yes. We provide free quote consultations for new installations and replacement projects. Use the contact form or call 407-548-4402 to schedule.",
   },

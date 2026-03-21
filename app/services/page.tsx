@@ -10,7 +10,7 @@ import { createMetadata, serviceDetails } from "@/data/siteContent";
 export const metadata: Metadata = createMetadata({
   title: "HVAC Services",
   description:
-    "Explore AC repair, AC installation, HVAC maintenance, heating, and commercial HVAC services from Right Coast Air & Mechanical.",
+    "Explore AC repair, AC installation and replacement, preventive maintenance, heating, commercial HVAC, and emergency service from Right Coast Air & Mechanical.",
   path: "/services",
 });
 

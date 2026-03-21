@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -14,11 +15,15 @@ export function Header() {
     <>
       <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/95 backdrop-blur">
         <div className="container-base flex h-20 items-center justify-between gap-4">
-          <Link href="/" className="group inline-flex items-center" aria-label="Right Coast Air home">
-            <div className="rounded-lg bg-deepNavy px-3 py-2 text-white shadow-md transition group-hover:bg-primaryBlue">
-              <p className="font-heading text-sm uppercase tracking-widest">Right Coast Air</p>
-              <p className="text-[0.65rem] uppercase tracking-[0.25em] text-sky-100">& Mechanical</p>
-            </div>
+          <Link href="/" className="inline-flex items-center" aria-label="Right Coast Air home">
+            <Image
+              src="/images/logo.png"
+              alt="Right Coast Air & Mechanical"
+              width={160}
+              height={60}
+              className="h-12 w-auto object-contain sm:h-14"
+              priority
+            />
           </Link>
 
           <nav aria-label="Main navigation" className="hidden items-center gap-1 lg:flex">

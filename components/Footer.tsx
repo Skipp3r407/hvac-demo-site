@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { businessInfo, navItems } from "@/data/siteContent";
@@ -10,7 +11,16 @@ export function Footer() {
     <footer className="mt-20 bg-deepNavy pb-24 pt-14 text-white md:pb-12">
       <div className="container-base grid gap-10 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <h2 className="text-2xl font-heading uppercase">{businessInfo.name}</h2>
+          <Link href="/" aria-label="Right Coast Air home" className="inline-flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt="Right Coast Air & Mechanical"
+              width={120}
+              height={40}
+              className="h-6 w-auto object-contain opacity-80 sm:h-7"
+            />
+          </Link>
+          <h2 className="mt-3 text-2xl font-heading uppercase">{businessInfo.name}</h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-200">
             Residential and commercial HVAC repair, installation, and maintenance in St. Cloud and
             the Greater Orlando area.
