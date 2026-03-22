@@ -3,8 +3,7 @@ import Link from "next/link";
 
 import { businessInfo, navItems } from "@/data/siteContent";
 
-// TODO: Replace with https://elevatedigitalco.com when domain is purchased
-const ELEVATE_DOMAIN = "https://elevate-digital-co.vercel.app";
+const ELEVATE_DOMAIN = "https://elevatedigitalstudios.net";
 
 export function Footer() {
   return (
@@ -15,9 +14,9 @@ export function Footer() {
             <Image
               src="/images/logo.png"
               alt="Right Coast Air & Mechanical"
-              width={120}
-              height={40}
-              className="h-6 w-auto object-contain opacity-80 sm:h-7"
+              width={180}
+              height={60}
+              className="h-10 w-auto object-contain opacity-90"
             />
           </Link>
           <h2 className="mt-3 text-2xl font-heading uppercase">{businessInfo.name}</h2>
@@ -61,20 +60,21 @@ export function Footer() {
       </div>
 
       <div className="container-base mt-10 border-t border-white/20 pt-6">
-        <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} {businessInfo.name}. All rights reserved.
-        </p>
-        <p className="mt-1 text-sm text-gray-400">
-          Website Design by{" "}
-          <a
-            href={ELEVATE_DOMAIN}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 transition-colors duration-200 hover:text-blue-300 hover:underline underline-offset-2"
-          >
-            Elevate Digital Co.
-          </a>
-        </p>
+        <div className="text-center text-sm text-gray-400">
+          <p>© {new Date().getFullYear()} {businessInfo.name}. All rights reserved.</p>
+          <p className="mt-3">
+            Website Design by{" "}
+            <a
+              href={ELEVATE_DOMAIN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-block font-medium text-gray-300 transition duration-300 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:bg-clip-text hover:text-transparent hover:drop-shadow-[0_0_6px_rgba(56,189,248,0.5)]"
+            >
+              Elevate Digital Co.
+              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-cyan-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

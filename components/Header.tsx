@@ -14,14 +14,14 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/95 backdrop-blur">
-        <div className="container-base flex h-20 items-center justify-between gap-4">
-          <Link href="/" className="inline-flex items-center" aria-label="Right Coast Air home">
+        <div className="container-base flex h-20 md:h-24 items-center justify-between gap-4">
+          <Link href="/" className="inline-flex shrink-0 items-center" aria-label="Right Coast Air home">
             <Image
               src="/images/logo.png"
               alt="Right Coast Air & Mechanical"
-              width={160}
-              height={60}
-              className="h-12 w-auto object-contain sm:h-14"
+              width={260}
+              height={100}
+              className="h-16 md:h-20 w-auto object-contain"
               priority
             />
           </Link>

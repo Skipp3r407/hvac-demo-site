@@ -368,6 +368,11 @@ export const rootMetadata: Metadata = {
       "Residential and commercial HVAC services across Central Florida.",
     images: ["/images/hero-hvac.svg"],
   },
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/icon.png",
+  },
 };
 
 export function createMetadata({ title, description, path }: MetadataInput): Metadata {
